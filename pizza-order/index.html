@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Pizza order</title>
+</head>
+
+<body>
+<div class="container pizza w-75 mx-auto my-3 pb-3 bg-white text-center">
+  <h1 class="pizza__title h2 text-center p-3">Pitsa buyurtma qilish</h1>
+
+  <form class="pizza__form" action="https://echo.htmlacademy.ru/" method="get" for="form">
+    <div class="row">
+      <div class="pizza__order order col-8 border-end border-dark">
+        <div class="w-25 mb-4">
+          <p class="text-start fw-bolder">Noni qanday bo'lsin?</p>
+          <select class="order__bread  form-select"></select>
+        </div>
+  
+        <div class="mb-4">
+          <p class="text-start fw-bolder">Kattaligi</p>
+          <div class="order__size  w-75 d-flex"></div>
+        </div>
+
+        <div class="w-75 mb-4">
+          <p class="text-start fw-bolder">Ustiga nima solaylik?</p>
+
+          <div class="order__ingredients row ms-1">
+          </div>
+        </div>
+
+        <div class="w-75">
+          <p class="text-start fw-bolder">Qo'shimchalar</p>
+          
+          <div class="order__extras ms-1 d-flex">
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="col-4">
+        <div class="order__result ms-2">
+          <p class="text-start fw-bolder mb-4">Non:  <span class="bread__result fw-normal"></span></p>
+
+          <p class="text-start fw-bolder mb-4">Kattaligi:  <span class="size__result fw-normal"></span></p>
+  
+          <div class="mb-4">
+            <p class="text-start fw-bolder">Ustida: </p>
+            <ul class="ingredients__result">
+            </ul>
+          </div>
+  
+          <div class="mt-5">
+            <p class="text-start fw-bolder">Qo'shimchalar:</p>
+            <ul class="extras__result">
+            </ul>
+          </div>
+  
+          <button class="btn btn-primary d-flex align-self-start mt-5 mb-4" id="form" type="submit">Buyurtma berish</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </form>
+</div> 
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

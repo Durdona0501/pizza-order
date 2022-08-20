@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/img/pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.ingredients__result {
+  height: 150px;
+}
+
+.extras__result {
+  height: 50px;
+}
